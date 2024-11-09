@@ -1,0 +1,88 @@
+V "GNAT Lib v14"
+M P W=b
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+
+U vm%b			vm.adb			b5343a04 NE OO SU IU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20240910130733 76789da1 ada%s
+D a-comlin.ads		20240910130733 4aa66568 ada.command_line%s
+D a-except.ads		20240910130733 e7970cd9 ada.exceptions%s
+D a-inteio.ads		20240910130733 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240910130733 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240910130733 119b8fb3 ada.streams%s
+D a-string.ads		20240910130733 90ac6797 ada.strings%s
+D a-sttebu.ads		20240910130733 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240910130733 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240910130733 9eaa38c6 ada.tags%s
+D a-textio.ads		20240910130733 34ef47de ada.text_io%s
+D a-tiinio.ads		20240910130733 76699c8f ada.text_io.integer_io%s
+D a-unccon.ads		20240910130733 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240910130733 9111f9c1 interfaces%s
+D i-cstrea.ads		20240910130733 ffd01b9d interfaces.c_streams%s
+D system.ads		20240910130733 14286b0f system%s
+D s-crtl.ads		20240910130733 beb39b9e system.crtl%s
+D s-exctab.ads		20240910130733 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240910130733 dc5161d4 system.file_control_block%s
+D s-parame.ads		20240910130733 3597fc11 system.parameters%s
+D s-putima.ads		20240910130733 17291fe4 system.put_images%s
+D s-secsta.ads		20240910130733 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240910130733 df77073e system.soft_links%s
+D s-stache.ads		20240910130733 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240910130733 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240910130733 ccded4e8 system.storage_elements%s
+D s-traent.ads		20240910130733 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240910130733 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240910130733 d9032363 system.wch_con%s
+D vm.adb		20241109221853 3d369116 vm%b
+G a e
+G c Z b b [vm standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 30|1r6 1r28 2r6 2r28 3r6 6r26
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 30|2w10 2r32
+39V13*Argument_Count{natural} 30|45s8
+52V13*Argument{string} 30|49s32
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[12|46] 30|3w10 6r30
+X 11 a-textio.ads
+58K13*Text_IO 785e16 30|1w10 1r32
+67P9*File_Type 30|9r17
+69n23*In_File{69E9} 30|49r23
+115U14*Open 30|49s9
+131U14*Close 30|56s9
+341V13*End_Of_File{boolean} 30|51s19
+419U14*Get 30|26s21
+433U14*Put 30|31s13
+565U14*Put_Line 30|41s34 46s9 47s9
+X 12 a-tiinio.ads
+53U14*Get 30|52s19[4|18]
+X 30 vm.adb
+5U11*VM 5b11 59l5 59t7
+6K12 IntIO=6:30 52r13
+7A9 Code_Arr(integer)<integer> 11r17 13r31
+9p4 Program{11|67P9} 49m14 49r14 51r31 52r23 56m15 56r15
+10i4 Num{integer} 52m32 53r31
+10i9 Mindex{integer} 53r20 54m13 54r23
+11a4 Memory{7A9} 53m13 57m13 57r13
+13U14 Mem 13b14 13=18 42l9 42t12 57s9
+13a18 code{7A9} 15r37 16r38 17r40 27m21 31r31 33m17 33r31 33r44 34r20
+14i5 IP{integer} 15r42 16r43 17r45 19r15 39m13
+14i9 NextIP{integer} 20m13 20r23 35m21 39r19
+15V14 Src{integer} 22s16 31s36 33s49
+16V14 Dest{integer} 27s26 30s19 33s22 33s36 34s25
+17V14 Branch{integer} 35s31
+24e21 Ch{character} 26m25 27r49
+
